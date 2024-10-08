@@ -1,0 +1,96 @@
+/* Instalando fontes */
+
+/* Fonte de peso normal */
+@font-face {
+    font-family: 'Rusillaserif';
+    font-weight: normal;
+    src: url('./fonts/Rusillaserif-Regular.ttf') format('truetype'),
+}
+
+/* Fonte de peso light */
+@font-face {
+    font-family: 'Rusillaserif';
+    font-weight: 300;
+    src: url('./fonts/Rusillaserif-Light.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: 'Courier New';
+    font-weight: 300;
+    src: url('./fonts/cour.ttf') format('truetype'),
+}
+
+body, html {
+    margin: 0;
+    background: url('./images/background-page.jpg') repeat-y center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.header-info {
+    background-color: #A2D28E;
+}
+
+.header-info p {
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-family: 'Rusillaserif', sans-serif;
+}
+
+.first-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin: 150px 150px;
+}
+.first-section div img {
+    width: 370px;
+}
+
+.first-section div:nth-child(1) {
+    width: 45ch;
+    line-height: 25px;
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: 'Courier New', sans-serif;
+}
+
+.first-section .img-instrumentos {
+    max-width: 600px;
+    min-width: 300px;
+    object-fit: contain;
+    width: 30vw;
+}
+
+@media (max-width: 1370px) {
+    .first-section {
+        margin: 100px 150px;
+        gap: 40px;
+    }
+    .first-section div:nth-child(1) {
+        width: 49ch;
+        font-size: 1em;
+    }
+    .first-section .img-instrumentos {
+        width: 400px;
+    }
+}
+
+@media (max-width: 1270px) {
+    .first-section div:nth-child(1) {
+        text-align: center;
+    }
+}
+
+@media (max-width: 486px) {
+    .header-info p {
+        line-height: 20px;
+    }
+}
