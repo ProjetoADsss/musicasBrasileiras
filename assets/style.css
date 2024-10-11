@@ -94,3 +94,76 @@ body, html {
         line-height: 20px;
     }
 }
+
+
+.second-section-title {
+    font-family: 'Rusillaserif', sans-serif;
+    letter-spacing: 25px;
+    text-align: center;
+    font-size: 2.5em;
+    margin: 0 15px;
+}
+
+.a-exposicao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 55px;
+    padding: 150px 150px;
+    font-family: 'Courier New', sans-serif;
+}
+
+.a-exposicao div:nth-child(1){
+    display: flex;
+    gap: 15px;
+}
+
+.a-exposicao div img{
+    width: 150px;
+    height: 150px;
+}
+
+.a-exposicao div:nth-child(2){
+    max-width: 45ch;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.a-exposicao div:nth-child(2) a{
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #00A859;
+    border: 0;
+    font-family: 'Rusillaserif', sans-serif;
+    color: white;
+    font-size: 1.2em;
+    letter-spacing: 5px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+@media (max-width: 1318px) {
+    .a-exposicao {
+        padding: 150px 10px;
+    }
+    .a-exposicao div:nth-child(2){
+        text-align: center;
+    }
+    .a-exposicao div:nth-child(2) a{
+        padding: 10px 0px;
+    }
+
+    .second-section-title {
+        font-size: 2em;
+        letter-spacing: 15px;
+    }
+}
+
+@media (max-width: 839px) {
+    .a-exposicao div:nth-child(2) a{
+        font-size: 3.5vw;
+    }
+}
