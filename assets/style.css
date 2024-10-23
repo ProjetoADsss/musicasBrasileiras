@@ -20,9 +20,10 @@
     src: url('./fonts/cour.ttf') format('truetype'),
 }
 
-body, html {
+body,
+html {
     margin: 0;
-    background: url('./images/background-page.jpg') repeat-y center center;
+    background: url('./images/background-page.png') repeat-y center center;
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -50,6 +51,7 @@ body, html {
     gap: 100px;
     margin: 150px 150px;
 }
+
 .first-section div img {
     width: 370px;
 }
@@ -74,10 +76,12 @@ body, html {
         margin: 100px 150px;
         gap: 40px;
     }
+
     .first-section div:nth-child(1) {
         width: 49ch;
         font-size: 1em;
     }
+
     .first-section .img-instrumentos {
         width: 400px;
     }
@@ -96,7 +100,8 @@ body, html {
 }
 
 
-.second-section-title {
+.second-section-title,
+.artists-section-title {
     font-family: 'Rusillaserif', sans-serif;
     letter-spacing: 25px;
     text-align: center;
@@ -114,30 +119,31 @@ body, html {
     font-family: 'Courier New', sans-serif;
 }
 
-.a-exposicao div:nth-child(1){
+.a-exposicao div:nth-child(1) {
     display: flex;
     gap: 15px;
 }
 
-.a-exposicao div img{
+.a-exposicao div img {
     width: 150px;
     height: 150px;
+    object-fit: contain;
 }
 
-.a-exposicao div:nth-child(2){
+.a-exposicao div:nth-child(2) {
     max-width: 45ch;
     font-size: 1.5em;
     font-weight: bold;
 }
 
-.a-exposicao div:nth-child(2) a{
+.a-exposicao div:nth-child(2) a {
     width: 100%;
     padding: 10px 15px;
     background-color: #00A859;
     border: 0;
     font-family: 'Rusillaserif', sans-serif;
     color: white;
-    font-size: 1.2em;
+    font-size: 1em;
     letter-spacing: 5px;
     font-weight: bold;
     display: block;
@@ -145,14 +151,71 @@ body, html {
     text-decoration: none;
 }
 
+.artists {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    margin-bottom: 30px;
+    padding: 0 5dvw;
+    gap: 30px;
+}
+
+.card-artist {
+    background-color: white;
+    text-align: center;
+    border-radius: 30px;
+    padding: 35px 35px;
+    width: 25%;
+    box-shadow: 0px 4px 4px 0px rgb(192, 190, 190);
+    opacity: 0;
+    transform: translateY(50px);
+    animation: enterFade 0.8s ease-out forwards;
+}
+
+.card-artist p{
+    font-family: 'Courier New', sans-serif;
+}
+
+.card-artist p:nth-child(2){
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.bi-arrow-left-short,
+.bi-arrow-right-short {
+    color: black;
+    background-color: #FAF072;
+    font-size: 3em;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.artists-navigation button {
+    font-family: 'Courier New', sans-serif;
+    padding: 20px 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-top: 15px;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 1px;
+    background-color: #00A859;
+    border: 0;
+}
+
 @media (max-width: 1318px) {
     .a-exposicao {
         padding: 150px 10px;
     }
-    .a-exposicao div:nth-child(2){
+
+    .a-exposicao div:nth-child(2) {
         text-align: center;
     }
-    .a-exposicao div:nth-child(2) a{
+
+    .a-exposicao div:nth-child(2) a {
         padding: 10px 0px;
     }
 
@@ -163,7 +226,28 @@ body, html {
 }
 
 @media (max-width: 839px) {
-    .a-exposicao div:nth-child(2) a{
+    .a-exposicao div:nth-child(2) a {
         font-size: 3.5vw;
     }
 }
+
+@media (max-width: 1194px) {
+    .artists {
+        padding: 0 15px;
+    }
+
+    .card-artist {
+        width: 80%;
+    }
+
+    .artists-navigation button {
+        font-size: 1em;
+    }
+}
+
+@keyframes enterFade {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
