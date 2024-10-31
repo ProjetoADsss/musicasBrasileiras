@@ -1,0 +1,33 @@
+[
+    {
+        "image": "obra-placeholder.png",
+        "name": "Nome da obra",
+        "autor": "Hilária Soares",
+        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut neque non ex tempor bibendum. Cras elementum, velit at commodo luctus, mi nisi accumsan augue, nec scelerisque leo enim id odio."
+    },
+    {
+        "image": "sillhouette.png",
+        "name": "Laura Camargo Foschi",
+        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut neque non ex tempor bibendum. Cras elementum, velit at commodo luctus, mi nisi accumsan augue, nec scelerisque leo enim id odio."
+    },
+    {
+        "image": "sillhouette.png",
+        "name": "Adailton Santos",
+        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut neque non ex tempor bibendum. Cras elementum, velit at commodo luctus, mi nisi accumsan augue, nec scelerisque leo enim id odio."
+    },
+    {
+        "image": "sillhouette.png",
+        "name": "Teste",
+        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut neque non ex tempor bibendum. Cras elementum, velit at commodo luctus, mi nisi accumsan augue, nec scelerisque leo enim id odio."
+    },
+    {
+        "image": "sillhouette.png",
+        "name": "Testando",
+        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut neque non ex tempor bibendum. Cras elementum, velit at commodo luctus, mi nisi accumsan augue, nec scelerisque leo enim id odio."
+    },
+    {
+        "image": "sillhouette.png",
+        "name": "Lis Martins",
+        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut neque non ex tempor bibendum. Cras elementum, velit at commodo luctus, mi nisi accumsan augue, nec scelerisque leo enim id odio."
+    }
+]
