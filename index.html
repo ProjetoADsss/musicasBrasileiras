@@ -25,14 +25,16 @@
     <section class="first-section" data-aos="fade-up" data-aos-duration="1000">
         <div>
             <img src="./assets/images/logo-letreiro.png" alt="">
-            <p>A exposição "Músicas Brasileiras e suas Vertentes Artísticas" é uma colaboração entre artistas da
-                Faculdade Paulista de Artes, com intuito de trazer à tona um sentimento, uma memória, um amor, uma dor,
-                através das músicas e valorização das artes brasileiras.</p>
+            <p>A exposição "Músicas Brasileiras e suas Vertentes Artísticas" é uma
+                colaboração entre artistas da Faculdade Paulista de Artes. Temos o intuito de
+                trazer à tona, através das nossas obras, diversos sentimentos com os estilos
+                músicas que percorrem o Brasil, o foco deste movimento é a valorização das
+                músicas e das artes.</p>
         </div>
         <img src="./assets/images/instrumentos.png" alt="" class="img-instrumentos">
     </section>
 
-    <h1 class="second-section-title">local da exposição</h1>
+    <h1 class="second-section-title">LOCAL DA EXPOSIÇÃO</h1>
     <section class="a-exposicao" data-aos="fade-up" data-aos-duration="1000">
         <div>
             <img src="./assets/images/logo-fpa.png" alt="logo faculdade paulista de artes">
@@ -50,32 +52,43 @@
         </div>
     </section>
 
-    <h1 class="artists-section-title">Artistas</h1>
+    <h1 class="artists-section-title">ARTISTAS</h1>
     <section class="artists" id="artists" data-aos="fade-up" data-aos-duration="1000"></section>
     <div class="artists-navigation" style="text-align: center;">
-        <i id="previousButton" class="bi bi-arrow-left-short"></i>
-        <i id="nextButton" class="bi bi-arrow-right-short"></i><br><br>
+        <i id="previousButtonArtistas" class="bi bi-arrow-left-short"></i>
+        <i id="nextButtonArtistas" class="bi bi-arrow-right-short"></i><br><br>
         <button><a href="/artistas.html">VER TODOS OS ARTISTAS</a></button>
     </div>
 
-    <h1 class="works-section-title">Obras</h1>
-    <section class="works">
-        <div>
-            <p>A exposição apresentará as seguintes obras:</p>
-            <li>Obra 1 - Descrição da obra 1</li>
-            <li>Obra 2 - Descrição da obra 2</li>
-            <li>Obra 3 - Descrição da obra 3</li>
-        </div>
+    <div class="old-works-info">
+        <p>As obras do projeto atual ainda estão sendo desenvolvidas, mas confere o que rolou no
+            semestre passado!</p>
+    </div>
+    <h1 class="obras-section-title">OBRAS</h1>
+    <section class="obras" id="obras"></section>
+    <div class="works-navigation" style="text-align: center;">
+        <i id="previousButtonObras" class="bi bi-arrow-left-short"></i>
+        <i id="nextButtonObras" class="bi bi-arrow-right-short"></i><br><br>
+        <button><a href="/obras.html">VER TODOS AS OBRAS</a></button>
+    </div>
 </body>
 <script>
     AOS.init();
 
     const artists = document.getElementById('artists')
-    const nextButton = document.getElementById('nextButton')
-    const previousButton = document.getElementById('previousButton')
+    const obras = document.getElementById('obras')
+    const nextButtonArtistas = document.getElementById('nextButtonArtistas')
+    const nextButtonObras = document.getElementById('nextButtonObras')
+    const previousButtonArtistas = document.getElementById('previousButtonArtistas')
+    const previousButtonObras = document.getElementById('previousButtonObras')
 
-    let initialIndex = 0
-    let endIndex = 3
+    let initialIndexArtistas = 0
+    let initialIndexObras = 0
+    let endIndexArtistas = 3
+    let endIndexObras = 1
+
+    // Listar artistas
+
     function showArtists(initialIndex, endIndex) {
         const artistsList = fetch('./assets/artistas.json').then(response => response.json()).then(data => {
             data = data.slice(initialIndex, endIndex)
@@ -96,22 +109,65 @@
 
     showArtists(0, 3);
 
-    nextButton.addEventListener("click", () => {
-        if (endIndex === 6) {
+    nextButtonArtistas.addEventListener("click", () => {
+        if (endIndexArtistas === 6) {
             return
         }
-        initialIndex = initialIndex + 3
-        endIndex = endIndex + 3
-        showArtists(initialIndex, endIndex)
+        initialIndexArtistas = initialIndexArtistas + 3
+        endIndexArtistas = endIndexArtistas + 3
+        showArtists(initialIndexArtistas, endIndexArtistas)
     })
 
-    previousButton.addEventListener("click", () => {
-        if (initialIndex === 0) {
+    previousButtonArtistas.addEventListener("click", () => {
+        if (initialIndexArtistas === 0) {
             return
         }
-        initialIndex = initialIndex - 3
-        endIndex = endIndex - 3
-        showArtists(initialIndex, endIndex)
+        initialIndexArtistas = initialIndexArtistas - 3
+        endIndexArtistas = endIndexArtistas - 3
+        showArtists(initialIndexArtistas, endIndexArtistas)
+    })
+
+    // Listar obras
+
+    function showArts(initialIndex, endIndex) {
+        const artistsList = fetch('./assets/obras.json').then(response => response.json()).then(data => {
+            data = data.slice(initialIndex, endIndex)
+            obras.innerHTML = ""
+            data.forEach((obra) => {
+                obras.innerHTML += `
+        <div class="card-obra">
+            <div>
+                <img src="./assets/images/${obra.image}" alt="imagem obra">
+                <p style="font-size: 1.5em;">${obra.name}</p>
+                <p>Autor(a): ${obra.autor}</p>
+            </div>
+            <p class="descricao-obra">${obra.descricao}</p>
+        </div>
+        `
+            })
+        }).catch(error => {
+            console.error('Erro ao carregar os artistas:', error); // Trate erros
+        });
+    }
+
+    showArts(0, 1);
+
+    nextButtonObras.addEventListener("click", () => {
+        if (endIndexObras === 6) {
+            return
+        }
+        initialIndexObras = initialIndexObras + 1
+        endIndexObras = endIndexObras + 1
+        showArts(initialIndexObras, endIndexObras)
+    })
+
+    previousButtonObras.addEventListener("click", () => {
+        if (initialIndexObras === 0) {
+            return
+        }
+        initialIndexObras = initialIndexObras - 1
+        endIndexObras = endIndexObras - 1
+        showArts(initialIndexObras, endIndexObras)
     })
 
 </script>
