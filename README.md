@@ -1,3 +1,3 @@
-# musicasBrasileiras
+# Músicas Brasileiras e suas Vertentes Artísticas
 
-A exposição "Músicas Brasileiras e suas Vertentes Artísticas" é uma colaboração entre artistas da Faculdade Paulista de Artes, com intuito de trazer à tona um sentimento, uma memória, um amor, uma dor, através das músicas e valorização das artes brasileiras.
+A exposição "Músicas Brasileiras e suas Vertentes Artísticas" é uma colaboração entre artistas da Faculdade Paulista de Artes. Temos o intuito de trazer à tona, através das nossas obras, diversos sentimentos com os estilos músicas que percorrem o Brasil, o foco deste movimento é a valorização das músicas e das artes.
