@@ -1,33 +1,23 @@
 [
     {
+        "image": "o-fantasma-do-dinheiro.jpeg",
+        "name": "O Fantasma do dinheiro",
+        "autor": "Hilária Soares",
+        "descricao": "O fato de estarmos sempre trabalhando em prol de ter dinheiro e conseguir alguma coisa na vida, porém não importa o quanto você se mate, as chances de vencer é quase zero, porém não é impossível, por isso seguimos em frente",
+        "tecnica": "Guache sobre canson",
+        "dimensao": " Canson A3 (29,7 x 42)",
+        "instagram": "hilariartz"
+    },
+    {
         "image": "obra-placeholder.png",
-        "name": "Nome da obra",
+        "name": "",
         "autor": "Hilária Soares",
         "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut neque non ex tempor bibendum. Cras elementum, velit at commodo luctus, mi nisi accumsan augue, nec scelerisque leo enim id odio."
     },
     {
-        "image": "sillhouette.png",
-        "name": "Laura Camargo Foschi",
-        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut neque non ex tempor bibendum. Cras elementum, velit at commodo luctus, mi nisi accumsan augue, nec scelerisque leo enim id odio."
-    },
-    {
-        "image": "sillhouette.png",
-        "name": "Adailton Santos",
-        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut neque non ex tempor bibendum. Cras elementum, velit at commodo luctus, mi nisi accumsan augue, nec scelerisque leo enim id odio."
-    },
-    {
-        "image": "sillhouette.png",
-        "name": "Teste",
-        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut neque non ex tempor bibendum. Cras elementum, velit at commodo luctus, mi nisi accumsan augue, nec scelerisque leo enim id odio."
-    },
-    {
-        "image": "sillhouette.png",
-        "name": "Testando",
-        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut neque non ex tempor bibendum. Cras elementum, velit at commodo luctus, mi nisi accumsan augue, nec scelerisque leo enim id odio."
-    },
-    {
-        "image": "sillhouette.png",
-        "name": "Lis Martins",
+        "image": "obra-placeholder.png",
+        "name": "Nome da obra",
+        "autor": "Hilária Soares",
         "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut neque non ex tempor bibendum. Cras elementum, velit at commodo luctus, mi nisi accumsan augue, nec scelerisque leo enim id odio."
     }
 ]
