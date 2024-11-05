@@ -23,58 +23,35 @@
         </div>
     </header>
     <br><br><br>
-    <h1 class="obras-section-title">Em construção</h1>
-    <h1 class="old-works-info">Seção ainda em construção sendo desenvolvido pelos alunos do curso de ADS da Universidade Nove de Julho</h1>
+    <h1 class="obras-section-title">Obras</h1>
+    <div class="old-works-info">
+        <p>As obras do projeto atual ainda estão sendo desenvolvidas, mas confere o que rolou no
+            semestre passado!</p>
+    </div>    
     <section class="obras" id="obras"></section>
-    <div class="works-navigation" style="text-align: center;">
-        <i id="previousButton" class="bi bi-arrow-left-short"></i>
-        <i id="nextButton" class="bi bi-arrow-right-short"></i><br><br>
-        <button><a href="/obras.html">VER TODOS AS OBRAS</a></button>
-    </div>
 </body>
 <script>
     AOS.init();
 
     const obras = document.getElementById('obras')
-    const nextButton = document.getElementById('nextButton')
-    const previousButton = document.getElementById('previousButton')
 
-    let initialIndex = 0
-    let endIndex = 3
-
-    nextButton.addEventListener("click", () => {
-        if (endIndex === 6) {
-            return
-        }
-        initialIndex = initialIndex + 3
-        endIndex = endIndex + 3
-        showArtists(initialIndex, endIndex)
-    })
-
-    previousButton.addEventListener("click", () => {
-        if (initialIndex === 0) {
-            return
-        }
-        initialIndex = initialIndex - 3
-        endIndex = endIndex - 3
-        showArtists(initialIndex, endIndex)
-    })
-
-    // Listar obras
-
-    function showArts(initialIndex, endIndex) {
+    function showArts() {
         const artistsList = fetch('./assets/obras.json').then(response => response.json()).then(data => {
-            data = data.slice(initialIndex, endIndex)
             obras.innerHTML = ""
             data.forEach((obra) => {
                 obras.innerHTML += `
         <div class="card-obra">
             <div>
-                <img src="./assets/images/${obra.image}" alt="imagem obra">
+                <img src="./assets/images/${obra.image}" style="width: 150px;border-radius: 15px;" alt="imagem obra">
                 <p style="font-size: 1.5em;">${obra.name}</p>
                 <p>Autor(a): ${obra.autor}</p>
             </div>
-            <p class="descricao-obra">${obra.descricao}</p>
+            <div>
+                <p class="descricao-obra">${obra.descricao}</p>
+                <p><b>Técnica:</b> ${obra.tecnica}</p>
+                <p><b>Dimensão:</b> ${obra.dimensao}</p>
+                <p><b>Instagram:</b> <a href="https://instagram.com/${obra.instagram}" style="color: black;" target="_blank">@${obra.instagram}</p>
+            </div>
         </div>
         `
             })
@@ -83,7 +60,7 @@
         });
     }
 
-    showArts(0, 1);
+    showArts();
 
 </script>
 
