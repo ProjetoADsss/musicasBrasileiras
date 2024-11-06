@@ -1,32 +1,27 @@
 [
     {
-        "image": "sillhouette.png",
+        "image": "ArtistaHilária.jpeg",
         "name": "Hilária Soares",
-        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut neque non ex tempor bibendum. Cras elementum, velit at commodo luctus, mi nisi accumsan augue, nec scelerisque leo enim id odio."
+        "instagram": "hilariartz"
+    },
+    {
+        "image": "ArtistaMalúCarvalho.jpeg",
+        "name": "Malú Carvalho",
+        "instagram": "maluzart"
     },
     {
         "image": "sillhouette.png",
-        "name": "Laura Camargo Foschi",
-        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut neque non ex tempor bibendum. Cras elementum, velit at commodo luctus, mi nisi accumsan augue, nec scelerisque leo enim id odio."
+        "name": "Sthe Santos",
+        "instagram": "sthe.santos1"
     },
     {
-        "image": "sillhouette.png",
-        "name": "Adailton Santos",
-        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut neque non ex tempor bibendum. Cras elementum, velit at commodo luctus, mi nisi accumsan augue, nec scelerisque leo enim id odio."
+        "image": "ArtistaCrisRamos.jpeg",
+        "name": "Cristiano Ramos",
+        "instagram": "cri4sts"
     },
     {
-        "image": "sillhouette.png",
-        "name": "Teste",
-        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut neque non ex tempor bibendum. Cras elementum, velit at commodo luctus, mi nisi accumsan augue, nec scelerisque leo enim id odio."
-    },
-    {
-        "image": "sillhouette.png",
-        "name": "Testando",
-        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut neque non ex tempor bibendum. Cras elementum, velit at commodo luctus, mi nisi accumsan augue, nec scelerisque leo enim id odio."
-    },
-    {
-        "image": "sillhouette.png",
-        "name": "Lis Martins",
-        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut neque non ex tempor bibendum. Cras elementum, velit at commodo luctus, mi nisi accumsan augue, nec scelerisque leo enim id odio."
+        "image": "ArtistaTamilisBotelho.jpeg",
+        "name": "Tamilis Botelho",
+        "instagram": "tamisbotelho"
     }
 ]

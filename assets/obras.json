@@ -1,23 +1,58 @@
 [
     {
-        "image": "o-fantasma-do-dinheiro.jpeg",
-        "name": "O Fantasma do dinheiro",
+        "image": "ObraHilária2.jpeg",
+        "name": "O Fantasma do Dinheiro",
         "autor": "Hilária Soares",
-        "descricao": "O fato de estarmos sempre trabalhando em prol de ter dinheiro e conseguir alguma coisa na vida, porém não importa o quanto você se mate, as chances de vencer é quase zero, porém não é impossível, por isso seguimos em frente",
         "tecnica": "Guache sobre canson",
-        "dimensao": " Canson A3 (29,7 x 42)",
+        "dimensao": "Canson A3 (29,7 x 42)",
+        "descricao": "O fato de estarmos sempre trabalhando em prol de ter dinheiro e conseguir alguma coisa na vida, porém não importa o quanto você se mate, as chances de vencer é quase zero, porém não impossível, por isso seguimos em frente.",
         "instagram": "hilariartz"
     },
     {
-        "image": "obra-placeholder.png",
+        "image": "ObraMalúCarvalho.jpeg",
         "name": "",
-        "autor": "Hilária Soares",
-        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut neque non ex tempor bibendum. Cras elementum, velit at commodo luctus, mi nisi accumsan augue, nec scelerisque leo enim id odio."
+        "autor": "Malú Carvalho",
+        "tecnica":"Mista: Nanquim, giz pastel oleoso, tinta acrílica, algodão e caneta esferográfica",
+        "dimensao": "Canson A3 (29,7 x 42)",
+        "descricao": "A necessidade que algumas pessoas em sociedade têm de ser elas mesmas, de ir contra o pensamento geral e não ligar para a opinião alheia. Acredito que ela reflete muito a própria personalidade de sua intérprete, Rita Lee, a qual me inspiro muito.",
+        "instagram": "maluzart"
     },
     {
-        "image": "obra-placeholder.png",
-        "name": "Nome da obra",
+        "image": "ObraStheSantos.jpeg",
+        "name": "",
+        "autor": "Sthe Santos",
+        "tecnica": "Colagem",
+        "dimensao": "Papel A2 (42 x 59,4)",
+        "descricao": "A música escolhida chama-se 'É tudo para ontem', do cantor Emicida, ela foi a trilha sonora dos meus dias por um bom tempo e até hoje eu ainda escuto como um lembrete, de ter esperança. O refrão dela fala muito comigo: sobre o viver ser partir, voltar e repartir, acredito que a vivência em comunidade, com pessoas ao redor é essencial e necessita desse partilhar contínuo, onde eu entrego, mas também recebo esse afeto. Ela representa esse cuidado, de não se esquecer do que de fato importa, do que deve ser o fim das coisas pra mim, o que eu partilhei de bom com o outro.",
+        "instagram": "sthe.santos1"
+    },
+    {
+        "image": "ObraCrisRamos.jpeg",
+        "name": "",
+        "autor": "Cristiano Ramos",
+        "tecnica":"Lápis de cor sobre canson",
+        "dimensao":"Canson A3 (29,7 x 42)",
+        "descricao": "Para mim a música atua como uma declaração de orgulho e amor pelas raízes de alguém e serve como um hino de conexão pessoal e convida outros a apreciar e abraçar a beleza da cidade.",
+        "instagram": "cri4sts"
+    },
+    {
+        "image": "ObraHilária1.jpeg",
+        "name": "Memórias de um passado que não volta mais",
         "autor": "Hilária Soares",
-        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut neque non ex tempor bibendum. Cras elementum, velit at commodo luctus, mi nisi accumsan augue, nec scelerisque leo enim id odio."
+        "tecnica": "Aquarela sobre canson",
+        "dimensao": "Canson A3 (29,7 x 42)",
+        "descricao": "Um Ditado: 'Quem canta seus males espanta'",
+        "instagram": "hilariartz"
+    },
+    {
+        "image": "ObradeTamilisBotelho.jpeg",
+        "image01": "ObraTamilisBotelho2.jpeg",
+        "image02": "ObradeTamilisBotelho3.jpeg",
+        "name": "",
+        "autor": "Tamilis Botelho",
+        "tecnica": "Mista: Aquarela e Nanquim",
+        "dimensao": "Canson A3 (29,7 x 42)",
+        "descricao": "Quando uma pessoa em ralacionamento não se sente pronta para avançar...e a frustração de apenas somente um se sentir preparado para dar um passo em frente, como um casamento. A frustração dos dois lados, um por querer se casar e o outro por não saber se está  preparado...como continuar essa relação?",
+        "instagram": "tamisbotelho"
     }
 ]
