@@ -277,6 +277,42 @@ html {
     width: 250px;
 }
 
+.imagem-container {
+    position: relative;
+    display: inline-block;
+}
+
+.imagem-obra {
+    display: block;
+}
+
+.imagem-container {
+    cursor: pointer;
+}
+
+.imagem-container::after {
+    content: 'Clique para ampliar';
+    opacity: 0;
+    position: absolute;
+    top: -65px;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #FFFBD6;
+    color: rgb(34, 32, 32);
+    text-align: center;
+    line-height: 70px;
+    font-size: 16px;
+    pointer-events: none;
+    font-family: 'Courier New', Courier, monospace;
+    transition: opacity 0.3s ease;
+    border: 1px solid rgb(168, 155, 155);
+}
+
+.imagem-container:hover::after {
+    opacity: 1;
+}
+
 .card-obra .nome-obra {
     font-size: 1.9em;
     font-family: 'Rusillaserif';
