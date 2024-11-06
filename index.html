@@ -59,12 +59,12 @@
         <i id="nextButtonArtistas" class="bi bi-arrow-right-short"></i><br><br>
         <button><a href="/artistas.html">VER TODOS OS ARTISTAS</a></button>
     </div>
+    <h1 class="obras-section-title">OBRAS</h1>
 
     <div class="old-works-info">
         <p>As obras do projeto atual ainda estão sendo desenvolvidas, mas confere o que rolou no
             semestre passado!</p>
     </div>
-    <h1 class="obras-section-title">OBRAS</h1>
     <section class="obras" id="obras"></section>
     <div class="works-navigation" style="text-align: center;">
         <i id="previousButtonObras" class="bi bi-arrow-left-short"></i>
@@ -98,7 +98,7 @@
         <div class="card-artist">
             <img src="./assets/images/${artist.image}" alt="imagem artista">
             <p>${artist.name}</p>
-            <p>${artist.descricao}</p>
+            <p><b>Instagram:</b> <a href="https://instagram.com/${artist.instagram}" style="color: black;" target="_blank">@${artist.instagram}</p>
         </div>
         `
             })
@@ -137,11 +137,18 @@
                 obras.innerHTML += `
         <div class="card-obra">
             <div>
-                <img src="./assets/images/${obra.image}" alt="imagem obra">
-                <p style="font-size: 1.5em;">${obra.name}</p>
-                <p>Autor(a): ${obra.autor}</p>
+                <img src="./assets/images/${obra.image}" alt="imagem obra" class="imagem-obra">
+                <p class="nome-obra">${obra.name}</p>
+                <p class="nome-autor">Autor(a): ${obra.autor}</p>
             </div>
-            <p class="descricao-obra">${obra.descricao}</p>
+            <div>
+                <p class="descricao-obra">"${obra.descricao}"</p>
+                <div class="informacoes-obra">
+                    <p><b>Técnica:</b> ${obra.tecnica}</p>
+                    <p><b>Dimensão:</b> ${obra.dimensao}</p>
+                    <p><b>Instagram:</b> <a href="https://instagram.com/${obra.instagram}" style="color: black;" target="_blank">@${obra.instagram}</p>
+                </div>
+            </div>
         </div>
         `
             })
