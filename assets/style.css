@@ -347,6 +347,44 @@ html {
     font-size: 1.3em;
 }
 
+#open-work-modal .logo {
+    max-width: 250px;
+}
+
+#open-work-modal .imagem-obra{
+    max-width: 420px;
+    min-width: 270px;
+    width: 100%;
+}
+
+#open-work-modal {
+    border: 2px solid #FFFBD6;
+    border-radius: 15px;
+    max-height: 80dvh;
+    text-align: center;
+}
+
+#open-work-modal::backdrop {
+    opacity: 0.5;
+    background-color: #FFFBD6;
+}
+
+#open-work-modal div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bi-x-circle {
+    font-size: 1.8em;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.bi-x-circle:hover {
+    background-color: rgba(211, 199, 199, 0.281);
+}
+
 @media (max-width: 1318px) {
     .a-exposicao {
         padding: 150px 10px;
@@ -393,7 +431,12 @@ html {
         height: initial;
         gap: 0;
         width: initial;
-        padding: 5px 15px;
+        padding: 35px 15px;
+    }
+
+    .card-obra .descricao-obra {
+        text-align: left;
+        font-size: 1em;
     }
 }
 
