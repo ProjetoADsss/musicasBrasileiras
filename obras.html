@@ -23,11 +23,11 @@
         </div>
     </header>
     <br><br><br>
-    <h1 class="obras-section-title">Obras</h1>
+    <h1 class="obras-section-title">OBRAS</h1>
     <div class="old-works-info">
         <p>As obras do projeto atual ainda estão sendo desenvolvidas, mas confere o que rolou no
             semestre passado!</p>
-    </div>    
+    </div>
     <section class="obras" id="obras"></section>
 </body>
 <script>
@@ -42,15 +42,17 @@
                 obras.innerHTML += `
         <div class="card-obra">
             <div>
-                <img src="./assets/images/${obra.image}" style="width: 150px;border-radius: 15px;" alt="imagem obra">
-                <p style="font-size: 1.5em;">${obra.name}</p>
-                <p>Autor(a): ${obra.autor}</p>
+                <img src="./assets/images/${obra.image}" alt="imagem obra">
+                <p class="nome-obra">${obra.name}</p>
+                <p class="nome-autor">Autor(a): ${obra.autor}</p>
             </div>
             <div>
-                <p class="descricao-obra">${obra.descricao}</p>
-                <p><b>Técnica:</b> ${obra.tecnica}</p>
-                <p><b>Dimensão:</b> ${obra.dimensao}</p>
-                <p><b>Instagram:</b> <a href="https://instagram.com/${obra.instagram}" style="color: black;" target="_blank">@${obra.instagram}</p>
+                <p class="descricao-obra">"${obra.descricao}"</p>
+                <div class="informacoes-obra">
+                    <p><b>Técnica:</b> ${obra.tecnica}</p>
+                    <p><b>Dimensão:</b> ${obra.dimensao}</p>
+                    <p><b>Instagram:</b> <a href="https://instagram.com/${obra.instagram}" style="color: black;" target="_blank">@${obra.instagram}</p>
+                </div>
             </div>
         </div>
         `
