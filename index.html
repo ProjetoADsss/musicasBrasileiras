@@ -54,7 +54,7 @@
         </div>
     </section>
 
-    <h1 class="artists-section-title">ARTISTAS</h1>
+    <h1 class="artists-section-title" id="artists-section-title">ARTISTAS</h1>
     <section class="artists" id="artists" data-aos="fade-up" data-aos-duration="1000"></section>
     <div class="artists-navigation" style="text-align: center;">
         <i id="previousButtonArtistas" class="bi bi-arrow-left-short"></i>
@@ -73,6 +73,8 @@
         <i id="nextButtonObras" class="bi bi-arrow-right-short"></i><br><br>
         <button><a href="/obras.html">VER TODOS AS OBRAS</a></button>
     </div>
+    <dialog id="open-work-modal"></dialog>
+
 </body>
 <script>
     AOS.init();
@@ -106,6 +108,8 @@
         </div>
         `
             })
+
+            window.location.href = '#artists-section-title'
         }).catch(error => {
             console.error('Erro ao carregar os artistas:', error); // Trate erros
         });
@@ -160,6 +164,23 @@
             })
         }).then(() => {
             document.querySelectorAll(".imagem-obra").forEach(element => {
+                element.onclick = () => {
+                    const modal = document.getElementById("open-work-modal");
+                    modal.innerHTML = `
+                    <div>
+                        <img src="./assets/images/logo-letreiro.png" class="logo" alt=""> 
+                        <i class='bi bi-x-circle'></i>
+                    </div>
+                    <hr>
+                    `;
+                    document.querySelector(".bi-x-circle").onclick = () => {
+                        modal.close()
+                    };
+                    element.removeAttribute("style")
+                    modal.appendChild(element.cloneNode(true));
+                    modal.showModal()
+                }
+
                 VanillaTilt.init(element, {
                     max: 15,
                     speed: 400,

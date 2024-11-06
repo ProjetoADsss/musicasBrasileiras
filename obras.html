@@ -30,6 +30,7 @@
             semestre passado!</p>
     </div>
     <section class="obras" id="obras"></section>
+    <dialog id="open-work-modal"></dialog>
 </body>
 <script>
     AOS.init();
@@ -61,6 +62,22 @@
             })
         }).then(() => {
             document.querySelectorAll(".imagem-obra").forEach(element => {
+                element.onclick = () => {
+                    const modal = document.getElementById("open-work-modal");
+                    modal.innerHTML = `
+                    <div>
+                        <img src="./assets/images/logo-letreiro.png" class="logo" alt=""> 
+                        <i class='bi bi-x-circle'></i>
+                    </div>
+                    <hr>
+                    `;
+                    document.querySelector(".bi-x-circle").onclick = () => {
+                        modal.close()
+                    };
+                    element.removeAttribute("style")
+                    modal.appendChild(element.cloneNode(true));
+                    modal.showModal()
+                }
                 VanillaTilt.init(element, {
                     max: 15,
                     speed: 400,
