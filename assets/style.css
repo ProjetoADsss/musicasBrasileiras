@@ -318,9 +318,14 @@ html {
     font-family: 'Rusillaserif';
 }
 
-.card-obra .nome-autor {
+.card-obra .nome-autor, .musica-escolhida {
     font-size: 1.3em;
     font-family: 'Courier New', Courier, monospace;
+}
+
+.musica-escolhida {
+    border: 1px solid black;
+    padding: 5px;
 }
 
 .card-obra .descricao-obra {
