@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/lib/vanilla-tilt.min.js"></script>
+    <script src="./assets/js/footerComponent.js"></script>
 
     <title>Musicas Brasileiras e suas Vertentes Artísticas</title>
 </head>
@@ -20,14 +21,17 @@
 <body>
     <header>
         <div class="header-info">
-            <p>MÚSICAS BRASILEIRAS E SUAS VERTENTES ARTÍSTICAS- XX/XX/2024 ÁS XX/XX</p>
+            <p>MÚSICAS BRASILEIRAS E SUAS VERTENTES ARTÍSTICAS - 23/11/2024 - 13h até 16h</p>
         </div>
     </header>
-    <br><br><br>
-    <h1 class="obras-section-title">OBRAS</h1>
     <div class="old-works-info">
         <p>As obras do projeto atual ainda estão sendo desenvolvidas, mas confere o que rolou no
             semestre passado!</p>
+    </div>
+    
+    <div class="sub-title">
+        <a href="/"> Voltar </a>
+        <h1 class="obras-section-title">OBRAS</h1>
     </div>
     <section class="obras" id="obras"></section>
     <dialog id="open-work-modal"></dialog>
@@ -36,6 +40,9 @@
     AOS.init();
 
     const obras = document.getElementById('obras')
+    const footerComponent = document.createElement('footer')
+    footerComponent.innerHTML = footer()
+    document.body.appendChild(footerComponent)
 
     function showArts() {
         const artistsList = fetch('./assets/obras.json').then(response => response.json()).then(data => {

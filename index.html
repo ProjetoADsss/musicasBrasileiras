@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/lib/vanilla-tilt.min.js"></script>
+    <script src="./assets/js/footerComponent.js"></script>
 
     <title>Musicas Brasileiras e suas Vertentes Artísticas</title>
 </head>
@@ -20,10 +21,10 @@
 <body>
     <header>
         <div class="header-info">
-            <p>MÚSICAS BRASILEIRAS E SUAS VERTENTES ARTÍSTICAS- XX/XX/2024 ÁS XX/XX</p>
+            <p>MÚSICAS BRASILEIRAS E SUAS VERTENTES ARTÍSTICAS - 23/11/2024 - 13h até 16h</p>
         </div>
     </header>
-
+          
     <section class="first-section" data-aos="fade-up" data-aos-duration="1000">
         <div>
             <img src="./assets/images/logo-letreiro.png" alt="">
@@ -45,7 +46,7 @@
         </div>
         <div>
             <p>
-                A exposição ocorrerá na FPA - Faculdade Paulista de Artes, no dia xx/xx/2024 ás xx:xx
+                A exposição ocorrerá na FPA - Faculdade Paulista de Artes, no dia 23/11/2024 - 13h até 16h.
                 <br><br>A entrada é gratuita, basta chegar e aproveitar!
             </p>
             <a href="https://www.google.com/maps/place/Av.+Brigadeiro+Lu%C3%ADs+Ant%C3%B4nio,+1200+-+Bela+Vista,+S%C3%A3o+Paulo+-+SP,+01318-001/data=!4m2!3m1!1s0x94ce59b06c9c7af3:0x222e5fb8bd20afc3?sa=X&ved=1t:242&ictx=111"
@@ -79,14 +80,15 @@
 <script>
     AOS.init();
 
-
-
     const artists = document.getElementById('artists')
     const obras = document.getElementById('obras')
     const nextButtonArtistas = document.getElementById('nextButtonArtistas')
     const nextButtonObras = document.getElementById('nextButtonObras')
     const previousButtonArtistas = document.getElementById('previousButtonArtistas')
     const previousButtonObras = document.getElementById('previousButtonObras')
+    const footerComponent = document.createElement('footer')
+    footerComponent.innerHTML = footer()
+    document.body.appendChild(footerComponent)
 
     let initialIndexArtistas = 0
     let initialIndexObras = 0
@@ -109,7 +111,6 @@
         `
             })
 
-            window.location.href = '#artists-section-title'
         }).catch(error => {
             console.error('Erro ao carregar os artistas:', error); // Trate erros
         });
@@ -124,6 +125,8 @@
         initialIndexArtistas = initialIndexArtistas + 3
         endIndexArtistas = endIndexArtistas + 3
         showArtists(initialIndexArtistas, endIndexArtistas)
+        window.location.href = '#artists-section-title'
+
     })
 
     previousButtonArtistas.addEventListener("click", () => {
@@ -133,6 +136,8 @@
         initialIndexArtistas = initialIndexArtistas - 3
         endIndexArtistas = endIndexArtistas - 3
         showArtists(initialIndexArtistas, endIndexArtistas)
+        window.location.href = '#artists-section-title'
+
     })
 
     // Listar obras
