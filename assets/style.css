@@ -262,11 +262,11 @@ header {
     -webkit-text-stroke-width: 1px;
     background-color: #00A859;
     border: 0;
-    margin-bottom: 150px;
 }
 
 .artists-navigation button,
 .works-navigation button {
+    margin-bottom: 150px;
     margin-top: 15px;
     padding: 0;
     border: 0;
