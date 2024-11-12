@@ -37,11 +37,11 @@ header {
     z-index: 999;
 }
 
-.header-info {
+.green-bar {
     background-color: #A2D28E;
 }
 
-.header-info p {
+.green-bar p {
     margin: 0;
     padding: 15px;
     text-align: center;
@@ -102,7 +102,7 @@ header {
 }
 
 @media (max-width: 486px) {
-    .header-info p {
+    .green-bar p {
         line-height: 20px;
     }
 }
@@ -252,17 +252,23 @@ header {
     cursor: pointer;
 }
 
-.artists-navigation button,
-.works-navigation button {
+.artists-navigation button a,
+.works-navigation button a {
     font-family: 'Courier New', sans-serif;
     padding: 20px 50px;
     color: white;
     font-weight: bold;
     font-size: 1.3em;
-    margin-top: 15px;
     -webkit-text-stroke-color: white;
     -webkit-text-stroke-width: 1px;
     background-color: #00A859;
+    border: 0;
+}
+
+.artists-navigation button,
+.works-navigation button {
+    margin-top: 15px;
+    padding: 0;
     border: 0;
 }
 
@@ -370,7 +376,6 @@ header {
 }
 
 .musica-escolhida {
-    border: 1px solid black;
     padding: 5px;
 }
 
@@ -384,8 +389,8 @@ header {
 }
 
 .informacoes-obra {
-    text-align: left !important;
     font-family: 'Courier New', Courier, monospace;
+    text-align: left !important;
     background-color: #FFFBD6;
     padding: 15px;
     border-radius: 30px;
@@ -395,7 +400,7 @@ header {
 .informacoes-obra b {
     -webkit-text-stroke-color: rgb(65, 62, 62);
     -webkit-text-stroke-width: 0.1px;
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
 #open-work-modal .logo {
