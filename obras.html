@@ -20,7 +20,7 @@
 
 <body>
     <header>
-        <div class="header-info">
+        <div class="green-bar">
             <p>MÚSICAS BRASILEIRAS E SUAS VERTENTES ARTÍSTICAS - 23/11/2024 - 13h até 16h</p>
         </div>
     </header>
@@ -53,12 +53,13 @@
             <div>
                 <div class="imagem-container">
                     <img src="./assets/images/${obra.image}" alt="imagem obra" class="imagem-obra" data-tilt data-tilt-max="15" data-tilt-speed="400">
-                </div>                <p class="nome-obra">${obra.name}</p>
-                <p class="nome-autor">Artista: ${obra.autor}</p>
-                <p class="musica-escolhida">Música escolhida<br><br> ${obra.musica}</p>
-            </div>
-            <div>
-                <p class="descricao-obra">"${obra.descricao}"</p>
+                </div>
+                <p class="nome-autor">Artista:<br> ${obra.autor}</p>
+                </div>
+                <div>
+                    <p class="nome-obra">${obra.name}</p>
+                    <p class="descricao-obra">"${obra.descricao}"</p>
+                    <p class="musica-escolhida">Música: <br><br> ${obra.musica}</p>
                 <div class="informacoes-obra">
                     <p><b>Técnica:</b> ${obra.tecnica}</p>
                     <p><b>Dimensão:</b> ${obra.dimensao}</p>
